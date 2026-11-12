@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://cfw1bohosinj8"]
+
+[ext_resource type="Script" uid="uid://d0u137p86ymkk" path="res://Scripts/grove.gd" id="1_ljmod"]
+[ext_resource type="Texture2D" uid="uid://cl5btaesnajcj" path="res://Assets/Grass Texture.jpg" id="2_w2feb"]
+[ext_resource type="Texture2D" uid="uid://d300ng6tuxpb3" path="res://Assets/Soil Texture.jpg" id="3_pjb1j"]
+[ext_resource type="Texture2D" uid="uid://bdpxnvr8b4mpa" path="res://Assets/Forest Texture.jpg" id="4_uqjfs"]
+[ext_resource type="Texture2D" uid="uid://bai0q6wj05yjl" path="res://Assets/UI Background.png" id="5_nsnxl"]
+[ext_resource type="Texture2D" uid="uid://c7hy6vibk8hn7" path="res://Assets/Florist Icon.PNG" id="6_kln5w"]
+[ext_resource type="Texture2D" uid="uid://cb0f08s5qxlhh" path="res://Assets/Inventory Icon.png" id="7_ofg1g"]
+[ext_resource type="Texture2D" uid="uid://of0tsar1i411" path="res://Assets/Book Icon.png" id="8_lreth"]
+[ext_resource type="Texture2D" uid="uid://rke8syskdjnd" path="res://Assets/Arrow.png" id="9_31wnx"]
+
+[node name="Grove" type="Node2D" unique_id=72831343]
+script = ExtResource("1_ljmod")
+
+[node name="Background" type="Node2D" parent="." unique_id=2022960406]
+
+[node name="Grass" type="Sprite2D" parent="Background" unique_id=319840408]
+position = Vector2(643, 362.50003)
+scale = Vector2(0.32, 0.24166669)
+texture = ExtResource("2_w2feb")
+
+[node name="Soil" type="Sprite2D" parent="Background" unique_id=335166064]
+position = Vector2(364.00003, 477.99997)
+scale = Vector2(0.10006648, 0.1)
+texture = ExtResource("3_pjb1j")
+
+[node name="Soil2" type="Sprite2D" parent="Background" unique_id=2096113174]
+position = Vector2(916, 477.99997)
+scale = Vector2(0.10006648, 0.1)
+texture = ExtResource("3_pjb1j")
+
+[node name="Forest" type="Sprite2D" parent="Background" unique_id=768382186]
+position = Vector2(317.00003, 169.95)
+scale = Vector2(0.109938465, 0.08641386)
+texture = ExtResource("4_uqjfs")
+
+[node name="Forest2" type="Sprite2D" parent="Background" unique_id=634825102]
+position = Vector2(974, 170)
+scale = Vector2(0.109938465, 0.08641386)
+texture = ExtResource("4_uqjfs")
+
+[node name="Control" type="Control" parent="." unique_id=2108334458]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Owner Name BG" type="TextureButton" parent="Control" unique_id=1282171278]
+layout_mode = 0
+offset_left = 340.0
+offset_right = 1880.0
+offset_bottom = 320.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("5_nsnxl")
+
+[node name="Owner Name" type="Label" parent="Control/Owner Name BG" unique_id=263122877]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 70.0
+offset_right = 1415.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0.4506963, 0.16747934, 0.09863905, 1)
+theme_override_font_sizes/font_size = 100
+text = "cool_name's Grove"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Shop Icon" type="TextureButton" parent="Control" unique_id=1199077213]
+layout_mode = 0
+offset_left = 1115.0
+offset_top = 160.0
+offset_right = 1390.0
+offset_bottom = 402.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("6_kln5w")
+
+[node name="Inventory Icon" type="TextureButton" parent="Control" unique_id=1163385001]
+layout_mode = 0
+offset_left = 1130.0
+offset_top = 310.0
+offset_right = 1370.0
+offset_bottom = 550.0
+scale = Vector2(0.55, 0.55)
+texture_normal = ExtResource("7_ofg1g")
+
+[node name="Grovepedia" type="TextureButton" parent="Control" unique_id=96781473]
+layout_mode = 0
+offset_left = 1120.0
+offset_top = 460.0
+offset_right = 1360.0
+offset_bottom = 700.0
+scale = Vector2(0.55, 0.55)
+texture_normal = ExtResource("8_lreth")
+
+[node name="Back Arrow" type="TextureButton" parent="Control" unique_id=999977242]
+layout_mode = 0
+offset_left = -70.0
+offset_top = -20.0
+offset_right = 596.0
+offset_bottom = 355.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("9_31wnx")
