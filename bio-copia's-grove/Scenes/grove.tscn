@@ -5,10 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://d300ng6tuxpb3" path="res://Assets/Soil Texture.jpg" id="3_pjb1j"]
 [ext_resource type="Texture2D" uid="uid://bdpxnvr8b4mpa" path="res://Assets/Forest Texture.jpg" id="4_uqjfs"]
 [ext_resource type="Texture2D" uid="uid://bai0q6wj05yjl" path="res://Assets/UI Background.png" id="5_nsnxl"]
-[ext_resource type="Texture2D" uid="uid://c7hy6vibk8hn7" path="res://Assets/Florist Icon.PNG" id="6_kln5w"]
-[ext_resource type="Texture2D" uid="uid://cb0f08s5qxlhh" path="res://Assets/Inventory Icon.png" id="7_ofg1g"]
-[ext_resource type="Texture2D" uid="uid://of0tsar1i411" path="res://Assets/Book Icon.png" id="8_lreth"]
-[ext_resource type="Texture2D" uid="uid://rke8syskdjnd" path="res://Assets/Arrow.png" id="9_31wnx"]
+[ext_resource type="Texture2D" uid="uid://rke8syskdjnd" path="res://Assets/Brown Arrow.png" id="9_31wnx"]
+[ext_resource type="PackedScene" uid="uid://1171ul00t5cm" path="res://Scenes/shop.tscn" id="10_uqjfs"]
+[ext_resource type="PackedScene" uid="uid://bsbe1a2owotlq" path="res://Scenes/inventory.tscn" id="11_nsnxl"]
+[ext_resource type="PackedScene" uid="uid://dt5xvyvtwxums" path="res://Scenes/grovepedia.tscn" id="12_kln5w"]
 
 [node name="Grove" type="Node2D" unique_id=72831343]
 script = ExtResource("1_ljmod")
@@ -71,33 +71,6 @@ text = "cool_name's Grove"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Shop Icon" type="TextureButton" parent="Control" unique_id=1199077213]
-layout_mode = 0
-offset_left = 1115.0
-offset_top = 160.0
-offset_right = 1390.0
-offset_bottom = 402.0
-scale = Vector2(0.5, 0.5)
-texture_normal = ExtResource("6_kln5w")
-
-[node name="Inventory Icon" type="TextureButton" parent="Control" unique_id=1163385001]
-layout_mode = 0
-offset_left = 1130.0
-offset_top = 310.0
-offset_right = 1370.0
-offset_bottom = 550.0
-scale = Vector2(0.55, 0.55)
-texture_normal = ExtResource("7_ofg1g")
-
-[node name="Grovepedia" type="TextureButton" parent="Control" unique_id=96781473]
-layout_mode = 0
-offset_left = 1120.0
-offset_top = 460.0
-offset_right = 1360.0
-offset_bottom = 700.0
-scale = Vector2(0.55, 0.55)
-texture_normal = ExtResource("8_lreth")
-
 [node name="Back Arrow" type="TextureButton" parent="Control" unique_id=999977242]
 layout_mode = 0
 offset_left = -70.0
@@ -106,3 +79,9 @@ offset_right = 596.0
 offset_bottom = 355.0
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("9_31wnx")
+
+[node name="Shop" parent="." unique_id=568597562 instance=ExtResource("10_uqjfs")]
+
+[node name="Inventory" parent="." unique_id=893937814 instance=ExtResource("11_nsnxl")]
+
+[node name="Grovepedia" parent="." unique_id=984212147 instance=ExtResource("12_kln5w")]

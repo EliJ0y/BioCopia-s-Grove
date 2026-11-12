@@ -1,0 +1,203 @@
+[gd_scene format=3 uid="uid://dt5xvyvtwxums"]
+
+[ext_resource type="Script" uid="uid://b1nh6u6chrg18" path="res://Scripts/grovepedia.gd" id="1_62bp2"]
+[ext_resource type="Texture2D" uid="uid://of0tsar1i411" path="res://Assets/Book Icon.png" id="2_rn4c0"]
+[ext_resource type="Texture2D" uid="uid://cfvuts5qxqtcw" path="res://Assets/Brown Background.png" id="3_ob31t"]
+[ext_resource type="Texture2D" uid="uid://kvj1pjhld0sr" path="res://Assets/Open Book Pages.png" id="4_eo274"]
+[ext_resource type="Texture2D" uid="uid://binanq36fuf6e" path="res://Assets/Green Arrow.png" id="4_jxi1o"]
+
+[node name="Grovepedia" type="Node2D" unique_id=984212147]
+script = ExtResource("1_62bp2")
+
+[node name="Grovepedia" type="TextureButton" parent="." unique_id=1500382093]
+offset_left = 1120.0
+offset_top = 470.0
+offset_right = 1360.0
+offset_bottom = 710.0
+scale = Vector2(0.55, 0.55)
+texture_normal = ExtResource("2_rn4c0")
+
+[node name="Pages" type="Control" parent="." unique_id=1884598275]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="Background" type="Sprite2D" parent="Pages" unique_id=1381549887]
+scale = Vector2(0.67, 0.67)
+texture = ExtResource("3_ob31t")
+centered = false
+
+[node name="Back Arrow" type="TextureButton" parent="Pages" unique_id=375769157]
+layout_mode = 0
+offset_left = -63.0
+offset_top = -19.99997
+offset_right = 603.0
+offset_bottom = 355.00003
+scale = Vector2(0.42, 0.42)
+texture_normal = ExtResource("4_jxi1o")
+
+[node name="Grovepedia Book" type="Sprite2D" parent="Pages" unique_id=678758545]
+position = Vector2(270, 50)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_eo274")
+centered = false
+
+[node name="Rarity 1" type="Label" parent="Pages" unique_id=1786177197]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 97.0
+offset_right = 574.0
+offset_bottom = 152.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 40
+text = "Common"
+
+[node name="Animal 1" type="TextureButton" parent="Pages" unique_id=1774246973]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 183.0
+offset_right = 468.0
+offset_bottom = 312.0
+
+[node name="Animal 1 Name" type="Label" parent="Pages" unique_id=312076281]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 315.0
+offset_right = 454.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 20
+text = "Animal 1"
+
+[node name="Animal 2" type="TextureButton" parent="Pages" unique_id=609458762]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 183.0
+offset_right = 625.0
+offset_bottom = 312.0
+
+[node name="Animal 2 Name" type="Label" parent="Pages" unique_id=1034089282]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 315.0
+offset_right = 610.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 20
+text = "Animal 2"
+
+[node name="Animal 3" type="TextureButton" parent="Pages" unique_id=1762042799]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 378.0
+offset_right = 468.0
+offset_bottom = 507.0
+
+[node name="Animal 3 Name" type="Label" parent="Pages" unique_id=1784846532]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 510.0
+offset_right = 454.0
+offset_bottom = 538.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 20
+text = "Animal 3"
+
+[node name="Animal 4" type="TextureButton" parent="Pages" unique_id=1994631147]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 378.0
+offset_right = 625.0
+offset_bottom = 507.0
+
+[node name="Animal 4 Name" type="Label" parent="Pages" unique_id=63444961]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 510.0
+offset_right = 610.0
+offset_bottom = 538.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 20
+text = "Animal 4"
+
+[node name="Rarity 2" type="Label" parent="Pages" unique_id=491934733]
+layout_mode = 0
+offset_left = 729.0
+offset_top = 97.0
+offset_right = 905.0
+offset_bottom = 152.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 40
+text = "Common"
+
+[node name="Animal 5" type="TextureButton" parent="Pages" unique_id=1636461978]
+layout_mode = 0
+offset_left = 684.0
+offset_top = 183.0
+offset_right = 799.0
+offset_bottom = 312.0
+
+[node name="Animal 5 Name" type="Label" parent="Pages" unique_id=841334608]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 315.0
+offset_right = 785.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 20
+text = "Animal 5"
+
+[node name="Animal 6" type="TextureButton" parent="Pages" unique_id=258948983]
+layout_mode = 0
+offset_left = 841.0
+offset_top = 183.0
+offset_right = 956.0
+offset_bottom = 312.0
+
+[node name="Animal 6 Name" type="Label" parent="Pages" unique_id=1799817028]
+layout_mode = 0
+offset_left = 856.0
+offset_top = 315.0
+offset_right = 941.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 20
+text = "Animal 6"
+
+[node name="Animal 7" type="TextureButton" parent="Pages" unique_id=1653903651]
+layout_mode = 0
+offset_left = 684.0
+offset_top = 378.0
+offset_right = 799.0
+offset_bottom = 507.0
+
+[node name="Animal 7 Name" type="Label" parent="Pages" unique_id=1681325824]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 510.0
+offset_right = 785.0
+offset_bottom = 538.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 20
+text = "Animal 7"
+
+[node name="Animal 8" type="TextureButton" parent="Pages" unique_id=261477072]
+layout_mode = 0
+offset_left = 841.0
+offset_top = 378.0
+offset_right = 956.0
+offset_bottom = 507.0
+
+[node name="Animal 8 Name" type="Label" parent="Pages" unique_id=1107807415]
+layout_mode = 0
+offset_left = 856.0
+offset_top = 510.0
+offset_right = 941.0
+offset_bottom = 538.0
+theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 20
+text = "Animal 8"
+
+[connection signal="pressed" from="Grovepedia" to="." method="_on_grovepedia_pressed"]

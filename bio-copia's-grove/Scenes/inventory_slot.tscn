@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b5ricttftrh20"]
+
+[ext_resource type="Texture2D" uid="uid://bsf6hrl66wlpj" path="res://Assets/Inventory Slot.PNG" id="1_0v82l"]
+
+[node name="Inventory Slot" type="Panel" unique_id=1817433048]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Slot" type="Sprite2D" parent="." unique_id=1794163655]
+texture = ExtResource("1_0v82l")
+centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=49347412]
+layout_mode = 0
+offset_right = 323.0
+offset_bottom = 295.0
+
+[node name="Panel" type="Panel" parent="CenterContainer" unique_id=1644975695]
+layout_mode = 2
+
+[node name="Inventory Item" type="Sprite2D" parent="CenterContainer/Panel" unique_id=1402296364]
