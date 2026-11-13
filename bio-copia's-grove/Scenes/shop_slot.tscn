@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dk50fvnpg2k24"]
+
+[ext_resource type="Texture2D" uid="uid://buqiwrbqubjuh" path="res://Assets/Shop Slot Background.PNG" id="1_rlcft"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0v82l"]
+texture = ExtResource("1_rlcft")
+
+[node name="Shop Slot" type="Panel" unique_id=1817433048]
+custom_minimum_size = Vector2(324, 296)
+offset_right = 324.0
+offset_bottom = 296.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_0v82l")
+
+[node name="Shop Item" type="Sprite2D" parent="." unique_id=1402296364]
+position = Vector2(162, 148)
+
+[node name="Coin Texture" type="Sprite2D" parent="." unique_id=332132900]
+position = Vector2(270, 0)
+
+[node name="Cost Value" type="Label" parent="." unique_id=104395830]
+layout_mode = 0
+offset_left = 227.0
+offset_right = 267.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "20"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item Name" type="Label" parent="." unique_id=853555732]
+layout_mode = 0
+offset_top = 300.0
+offset_right = 324.0
+offset_bottom = 355.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Pine Tree"
+horizontal_alignment = 1
+vertical_alignment = 1

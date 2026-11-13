@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://emtjhmitdn18" path="res://Assets/Green Midground.png" id="4_3ps1r"]
 [ext_resource type="Texture2D" uid="uid://bai0q6wj05yjl" path="res://Assets/UI Background.png" id="5_ymrm4"]
 [ext_resource type="Texture2D" uid="uid://binanq36fuf6e" path="res://Assets/Green Arrow.png" id="6_3ps1r"]
+[ext_resource type="PackedScene" uid="uid://dk50fvnpg2k24" path="res://Scenes/shop_slot.tscn" id="7_ymrm4"]
 
 [node name="Shop" type="Node2D" unique_id=568597562]
 script = ExtResource("1_a0mxf")
@@ -19,7 +20,6 @@ scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("2_2shtd")
 
 [node name="Shop Panel" type="Panel" parent="." unique_id=939066191]
-visible = false
 offset_right = 1280.0
 offset_bottom = 720.0
 
@@ -32,6 +32,62 @@ centered = false
 position = Vector2(640, 401.00003)
 scale = Vector2(0.635, 0.5351852)
 texture = ExtResource("4_3ps1r")
+
+[node name="MarginContainer" type="MarginContainer" parent="Shop Panel" unique_id=568953039]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 120.0
+offset_right = -40.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Shop Panel/MarginContainer" unique_id=1331526598]
+layout_mode = 2
+vertical_scroll_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Shop Panel/MarginContainer/ScrollContainer" unique_id=1882229957]
+custom_minimum_size = Vector2(1172, 1150)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 100
+theme_override_constants/v_separation = 100
+columns = 3
+
+[node name="Shop Slot" parent="Shop Panel/MarginContainer/ScrollContainer/GridContainer" unique_id=1817433048 instance=ExtResource("7_ymrm4")]
+layout_mode = 2
+
+[node name="Shop Slot2" parent="Shop Panel/MarginContainer/ScrollContainer/GridContainer" unique_id=932124740 instance=ExtResource("7_ymrm4")]
+layout_mode = 2
+
+[node name="Shop Slot3" parent="Shop Panel/MarginContainer/ScrollContainer/GridContainer" unique_id=2061304042 instance=ExtResource("7_ymrm4")]
+layout_mode = 2
+
+[node name="Shop Slot4" parent="Shop Panel/MarginContainer/ScrollContainer/GridContainer" unique_id=1229981241 instance=ExtResource("7_ymrm4")]
+layout_mode = 2
+
+[node name="Shop Slot5" parent="Shop Panel/MarginContainer/ScrollContainer/GridContainer" unique_id=1598293646 instance=ExtResource("7_ymrm4")]
+layout_mode = 2
+
+[node name="Shop Slot6" parent="Shop Panel/MarginContainer/ScrollContainer/GridContainer" unique_id=1035944761 instance=ExtResource("7_ymrm4")]
+layout_mode = 2
+
+[node name="Shop Slot7" parent="Shop Panel/MarginContainer/ScrollContainer/GridContainer" unique_id=463126795 instance=ExtResource("7_ymrm4")]
+layout_mode = 2
+
+[node name="Shop Slot8" parent="Shop Panel/MarginContainer/ScrollContainer/GridContainer" unique_id=366150157 instance=ExtResource("7_ymrm4")]
+layout_mode = 2
+
+[node name="Shop Slot9" parent="Shop Panel/MarginContainer/ScrollContainer/GridContainer" unique_id=722182419 instance=ExtResource("7_ymrm4")]
+layout_mode = 2
 
 [node name="Back Arrow" type="TextureButton" parent="Shop Panel" unique_id=906104215]
 layout_mode = 0
@@ -83,20 +139,6 @@ theme_override_font_sizes/font_size = 150
 text = "Animals"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Plant Shop" type="Control" parent="Shop Panel" unique_id=1274552149]
-anchors_preset = 0
-offset_left = 40.0
-offset_top = 120.0
-offset_right = 1240.0
-offset_bottom = 680.0
-
-[node name="Animal Shop" type="Control" parent="Shop Panel" unique_id=888049157]
-anchors_preset = 0
-offset_left = 40.0
-offset_top = 120.0
-offset_right = 1240.0
-offset_bottom = 680.0
 
 [connection signal="pressed" from="Shop Icon" to="." method="_on_shop_icon_pressed"]
 [connection signal="pressed" from="Shop Panel/Plant Shop Button" to="." method="_on_plant_shop_button_pressed"]

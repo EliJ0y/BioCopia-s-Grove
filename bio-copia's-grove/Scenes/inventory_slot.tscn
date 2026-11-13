@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://bsf6hrl66wlpj" path="res://Assets/Inventory Slot.PNG" id="1_0v82l"]
 
 [node name="Inventory Slot" type="Panel" unique_id=1817433048]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 324.0
+offset_bottom = 296.0
 
 [node name="Slot" type="Sprite2D" parent="." unique_id=1794163655]
 texture = ExtResource("1_0v82l")
