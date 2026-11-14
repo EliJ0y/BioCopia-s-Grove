@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShopItemsResource" format=3 uid="uid://dbtycjp4kyr"]
+
+[ext_resource type="Texture2D" uid="uid://fhfdgwf8gwxd" path="res://Assets/toys.png" id="1_se0rq"]
+[ext_resource type="Script" uid="uid://bxif41uf4p6uf" path="res://Scripts/shop_items_resource.gd" id="2_i5s2w"]
+
+[resource]
+script = ExtResource("2_i5s2w")
+item_texture = ExtResource("1_se0rq")
+item_cost = 30
+item_name = "Toys"
+metadata/_custom_type_script = "uid://bxif41uf4p6uf"

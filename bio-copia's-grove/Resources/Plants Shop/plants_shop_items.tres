@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShopArraysResource" format=3 uid="uid://0cptqpf7amcn"]
+
+[ext_resource type="Resource" uid="uid://c27yqexaen32d" path="res://Resources/Plants Shop/shop_pine_tree.tres" id="1_qajwv"]
+[ext_resource type="Resource" uid="uid://dh3jpuv2w0slo" path="res://Resources/Plants Shop/shop_fern.tres" id="2_8syuy"]
+[ext_resource type="Resource" uid="uid://csr4p7g2qbmly" path="res://Resources/Plants Shop/shop_daisy.tres" id="3_cwyv5"]
+[ext_resource type="Script" uid="uid://rgqrdub2psjm" path="res://Scripts/shop_arrays_resource.gd" id="4_c2q5q"]
+
+[resource]
+script = ExtResource("4_c2q5q")
+items_array = [ExtResource("1_qajwv"), ExtResource("2_8syuy"), ExtResource("3_cwyv5"), ExtResource("2_8syuy"), ExtResource("3_cwyv5"), ExtResource("2_8syuy"), ExtResource("3_cwyv5"), ExtResource("1_qajwv"), ExtResource("1_qajwv")]
+metadata/_custom_type_script = "uid://rgqrdub2psjm"
