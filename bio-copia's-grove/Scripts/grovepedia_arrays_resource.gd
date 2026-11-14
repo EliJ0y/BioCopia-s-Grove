@@ -2,4 +2,4 @@ extends Resource
 
 class_name GrovepediaArraysResource
 
-@export var page_set: Array[GrovepediaPagesResource]
+@export var sets_of_pages: Array[GrovepediaPagesResource]

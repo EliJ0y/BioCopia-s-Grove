@@ -6,12 +6,6 @@
 [resource]
 script = ExtResource("2_rw5jk")
 rarity = "Epic"
-picture_1_sprite = ExtResource("1_mewrc")
-picture_1_name = "Undiscovered"
-picture_2_sprite = ExtResource("1_mewrc")
-picture_2_name = "Undiscovered"
-picture_3_sprite = ExtResource("1_mewrc")
-picture_3_name = "Undiscovered"
-picture_4_sprite = ExtResource("1_mewrc")
-picture_4_name = "Undiscovered"
+sprites = Array[Texture2D]([ExtResource("1_mewrc"), ExtResource("1_mewrc"), ExtResource("1_mewrc"), ExtResource("1_mewrc")])
+names = Array[String](["Undiscovered", "Undiscovered", "Undiscovered", "Undiscovered"])
 metadata/_custom_type_script = "uid://oef7wvxc0kn8"

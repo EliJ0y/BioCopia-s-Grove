@@ -117,7 +117,7 @@ offset_bottom = 160.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 40
 
-[node name="Animal 1" type="TextureButton" parent="Pages/Left Page" unique_id=1774246973]
+[node name="Sprite 1" type="TextureButton" parent="Pages/Left Page" unique_id=1774246973]
 offset_left = 353.0
 offset_top = 183.0
 offset_right = 468.0
@@ -125,7 +125,7 @@ offset_bottom = 312.0
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Animal 1 Name" type="Label" parent="Pages/Left Page" unique_id=312076281]
+[node name="Sprite 1 Name" type="Label" parent="Pages/Left Page" unique_id=312076281]
 offset_left = 330.0
 offset_top = 315.0
 offset_right = 490.0
@@ -135,7 +135,7 @@ theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Animal 2" type="TextureButton" parent="Pages/Left Page" unique_id=609458762]
+[node name="Sprite 2" type="TextureButton" parent="Pages/Left Page" unique_id=609458762]
 offset_left = 510.0
 offset_top = 183.0
 offset_right = 625.0
@@ -143,7 +143,7 @@ offset_bottom = 312.0
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Animal 2 Name" type="Label" parent="Pages/Left Page" unique_id=1034089282]
+[node name="Sprite 2 Name" type="Label" parent="Pages/Left Page" unique_id=1034089282]
 offset_left = 487.0
 offset_top = 315.0
 offset_right = 647.0
@@ -153,7 +153,7 @@ theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Animal 3" type="TextureButton" parent="Pages/Left Page" unique_id=1762042799]
+[node name="Sprite 3" type="TextureButton" parent="Pages/Left Page" unique_id=1762042799]
 offset_left = 353.0
 offset_top = 378.0
 offset_right = 468.0
@@ -161,7 +161,7 @@ offset_bottom = 507.0
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Animal 3 Name" type="Label" parent="Pages/Left Page" unique_id=1784846532]
+[node name="Sprite 3 Name" type="Label" parent="Pages/Left Page" unique_id=1784846532]
 offset_left = 330.0
 offset_top = 510.0
 offset_right = 490.0
@@ -171,7 +171,7 @@ theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Animal 4" type="TextureButton" parent="Pages/Left Page" unique_id=1994631147]
+[node name="Sprite 4" type="TextureButton" parent="Pages/Left Page" unique_id=1994631147]
 offset_left = 510.0
 offset_top = 378.0
 offset_right = 625.0
@@ -179,7 +179,7 @@ offset_bottom = 507.0
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Animal 4 Name" type="Label" parent="Pages/Left Page" unique_id=63444961]
+[node name="Sprite 4 Name" type="Label" parent="Pages/Left Page" unique_id=63444961]
 offset_left = 487.0
 offset_top = 510.0
 offset_right = 647.0
@@ -202,7 +202,7 @@ theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Animal 1" type="TextureButton" parent="Pages/Right Page" unique_id=1636461978]
+[node name="Sprite 1" type="TextureButton" parent="Pages/Right Page" unique_id=1636461978]
 offset_left = 684.0
 offset_top = 183.0
 offset_right = 799.0
@@ -210,7 +210,7 @@ offset_bottom = 312.0
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Animal 1 Name" type="Label" parent="Pages/Right Page" unique_id=841334608]
+[node name="Sprite 1 Name" type="Label" parent="Pages/Right Page" unique_id=841334608]
 offset_left = 662.0
 offset_top = 315.0
 offset_right = 822.0
@@ -220,7 +220,7 @@ theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Animal 2" type="TextureButton" parent="Pages/Right Page" unique_id=258948983]
+[node name="Sprite 2" type="TextureButton" parent="Pages/Right Page" unique_id=258948983]
 offset_left = 841.0
 offset_top = 183.0
 offset_right = 956.0
@@ -228,7 +228,7 @@ offset_bottom = 312.0
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Animal 2 Name" type="Label" parent="Pages/Right Page" unique_id=1799817028]
+[node name="Sprite 2 Name" type="Label" parent="Pages/Right Page" unique_id=1799817028]
 offset_left = 819.0
 offset_top = 315.0
 offset_right = 979.0
@@ -238,7 +238,7 @@ theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Animal 3" type="TextureButton" parent="Pages/Right Page" unique_id=1653903651]
+[node name="Sprite 3" type="TextureButton" parent="Pages/Right Page" unique_id=1653903651]
 offset_left = 684.0
 offset_top = 378.0
 offset_right = 799.0
@@ -246,7 +246,7 @@ offset_bottom = 507.0
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Animal 3 Name" type="Label" parent="Pages/Right Page" unique_id=1681325824]
+[node name="Sprite 3 Name" type="Label" parent="Pages/Right Page" unique_id=1681325824]
 offset_left = 662.0
 offset_top = 510.0
 offset_right = 822.0
@@ -256,7 +256,7 @@ theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Animal 4" type="TextureButton" parent="Pages/Right Page" unique_id=261477072]
+[node name="Sprite 4" type="TextureButton" parent="Pages/Right Page" unique_id=261477072]
 offset_left = 841.0
 offset_top = 378.0
 offset_right = 956.0
@@ -264,7 +264,7 @@ offset_bottom = 507.0
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Animal 4 Name" type="Label" parent="Pages/Right Page" unique_id=1107807415]
+[node name="Sprite 4 Name" type="Label" parent="Pages/Right Page" unique_id=1107807415]
 offset_left = 819.0
 offset_top = 510.0
 offset_right = 979.0

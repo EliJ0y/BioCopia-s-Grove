@@ -7,5 +7,5 @@
 
 [resource]
 script = ExtResource("4_ao2gl")
-page_set = Array[ExtResource("1_sye7j")]([ExtResource("2_1rnqs"), ExtResource("3_jttfs")])
+sets_of_pages = Array[ExtResource("1_sye7j")]([ExtResource("2_1rnqs"), ExtResource("3_jttfs")])
 metadata/_custom_type_script = "uid://b23iplbxcaoks"
