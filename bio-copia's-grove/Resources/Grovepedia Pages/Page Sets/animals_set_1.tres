@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GrovepediaArraysResource" format=3 uid="uid://d1fjw76ijvhta"]
+
+[ext_resource type="Script" uid="uid://oef7wvxc0kn8" path="res://Scripts/grovepedia_pages_resource.gd" id="1_2li3u"]
+[ext_resource type="Resource" uid="uid://4om2ipby7lwv" path="res://Resources/Grovepedia Pages/Animals Pages/animals_page_1.tres" id="2_phevi"]
+[ext_resource type="Resource" uid="uid://of5beooya1nf" path="res://Resources/Grovepedia Pages/Animals Pages/animals_page_2.tres" id="3_bjolt"]
+[ext_resource type="Script" uid="uid://b23iplbxcaoks" path="res://Scripts/grovepedia_arrays_resource.gd" id="4_a72rw"]
+
+[resource]
+script = ExtResource("4_a72rw")
+page_set = Array[ExtResource("1_2li3u")]([ExtResource("2_phevi"), ExtResource("3_bjolt")])
+metadata/_custom_type_script = "uid://b23iplbxcaoks"
