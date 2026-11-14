@@ -1,5 +1,7 @@
 extends Node2D
 
+signal item_purchased(item: ShopItemsResource)
+
 var plants_shop_items = preload("res://Resources/Plants Shop/plants_shop_items.tres")
 var animals_shop_items = preload("res://Resources/Animals Shop/animals_shop_items.tres")
 
@@ -7,6 +9,13 @@ var animals_shop_items = preload("res://Resources/Animals Shop/animals_shop_item
 @onready var grid_container: GridContainer = $"Shop Panel/MarginContainer/ScrollContainer/GridContainer"
 @onready var shop_slots = grid_container.get_children()
 
+
+func _ready() -> void:
+	for slot in shop_slots:
+		slot.item_purchased.connect(on_item_purchased)
+
+func on_item_purchased(item: ShopItemsResource):
+	item_purchased.emit(item)
 
 func _on_shop_icon_pressed() -> void:
 	$"Shop Panel".visible = true
@@ -31,8 +40,9 @@ func show_shop_items(shop_items: Array):
 		if i < shop_items.size():
 			var shop_item = shop_items[i]
 			slot.visible = true
+			slot.get_shop_item(shop_item)
 			slot.get_node("Shop Item").texture = shop_item.item_texture
 			slot.get_node("Cost Value").text = str(shop_item.item_cost)
-			slot.get_node("Item Name").text = shop_item.item_name
+			slot.get_node("Item Name BG/Item Name").text = shop_item.item_name
 		else:
 			slot.visible = false

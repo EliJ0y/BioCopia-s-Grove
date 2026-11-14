@@ -5,9 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://d300ng6tuxpb3" path="res://Assets/Soil Texture.jpg" id="3_pjb1j"]
 [ext_resource type="Texture2D" uid="uid://bdpxnvr8b4mpa" path="res://Assets/Forest Texture.jpg" id="4_uqjfs"]
 [ext_resource type="Texture2D" uid="uid://bai0q6wj05yjl" path="res://Assets/UI Background.png" id="5_nsnxl"]
+[ext_resource type="Texture2D" uid="uid://ck2ss7rskpr8g" path="res://Assets/Coins.PNG" id="7_w2feb"]
 [ext_resource type="Texture2D" uid="uid://rke8syskdjnd" path="res://Assets/Brown Arrow.png" id="9_31wnx"]
 [ext_resource type="PackedScene" uid="uid://1171ul00t5cm" path="res://Scenes/shop.tscn" id="10_uqjfs"]
 [ext_resource type="PackedScene" uid="uid://bsbe1a2owotlq" path="res://Scenes/inventory.tscn" id="11_nsnxl"]
+[ext_resource type="PackedScene" uid="uid://dojifuisek8ip" path="res://Scenes/game_manager.tscn" id="11_pjb1j"]
 [ext_resource type="PackedScene" uid="uid://dt5xvyvtwxums" path="res://Scenes/grovepedia.tscn" id="12_kln5w"]
 
 [node name="Grove" type="Node2D" unique_id=72831343]
@@ -80,8 +82,23 @@ offset_bottom = 355.0
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("9_31wnx")
 
+[node name="Coins" type="Sprite2D" parent="Control" unique_id=1538656539]
+position = Vector2(1230, 40)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_w2feb")
+
+[node name="Coin Amount" type="Label" parent="Control" unique_id=1213037884]
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 3.0
+offset_right = 1162.0
+offset_bottom = 113.0
+theme_override_font_sizes/font_size = 80
+
 [node name="Shop" parent="." unique_id=568597562 instance=ExtResource("10_uqjfs")]
 
 [node name="Inventory" parent="." unique_id=893937814 instance=ExtResource("11_nsnxl")]
 
 [node name="Grovepedia" parent="." unique_id=984212147 instance=ExtResource("12_kln5w")]
+
+[node name="Game Manager" parent="." unique_id=1306400138 instance=ExtResource("11_pjb1j")]

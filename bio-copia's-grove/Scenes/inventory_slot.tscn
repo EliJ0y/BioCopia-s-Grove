@@ -10,12 +10,6 @@ offset_bottom = 296.0
 texture = ExtResource("1_0v82l")
 centered = false
 
-[node name="CenterContainer" type="CenterContainer" parent="." unique_id=49347412]
-layout_mode = 0
-offset_right = 323.0
-offset_bottom = 295.0
-
-[node name="Panel" type="Panel" parent="CenterContainer" unique_id=1644975695]
-layout_mode = 2
-
-[node name="Inventory Item" type="Sprite2D" parent="CenterContainer/Panel" unique_id=1402296364]
+[node name="Inventory Sprite" type="Sprite2D" parent="." unique_id=1402296364]
+position = Vector2(161, 147)
+scale = Vector2(0.4, 0.4)
