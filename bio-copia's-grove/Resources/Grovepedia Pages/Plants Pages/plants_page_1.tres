@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="GrovepediaPagesResource" format=3 uid="uid://uvgek51c22kn"]
+
+[ext_resource type="Texture2D" uid="uid://g5eugyw62dce" path="res://Assets/pine-tree.png" id="1_31ah4"]
+[ext_resource type="Texture2D" uid="uid://dmuru50ibnx6b" path="res://Assets/fern.png" id="2_4iyq5"]
+[ext_resource type="Texture2D" uid="uid://cx740xb2kdgb2" path="res://Assets/lock.png" id="3_nlsvd"]
+[ext_resource type="Script" uid="uid://oef7wvxc0kn8" path="res://Scripts/grovepedia_pages_resource.gd" id="4_hlwvq"]
+
+[resource]
+script = ExtResource("4_hlwvq")
+rarity = "Common"
+picture_1_sprite = ExtResource("1_31ah4")
+picture_1_name = "Pine Tree"
+picture_2_sprite = ExtResource("2_4iyq5")
+picture_2_name = "Fern"
+picture_3_sprite = ExtResource("3_nlsvd")
+picture_3_name = "Undiscovered"
+picture_4_sprite = ExtResource("3_nlsvd")
+picture_4_name = "Undiscovered"
+metadata/_custom_type_script = "uid://oef7wvxc0kn8"

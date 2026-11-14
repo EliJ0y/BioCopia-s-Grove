@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="GrovepediaPagesResource" format=3 uid="uid://c8pfvq1hjkc7f"]
+
+[ext_resource type="Texture2D" uid="uid://ysb6l4xygb5r" path="res://Assets/pet-ball.png" id="1_oj5cj"]
+[ext_resource type="Texture2D" uid="uid://cx740xb2kdgb2" path="res://Assets/lock.png" id="2_5igpo"]
+[ext_resource type="Script" uid="uid://oef7wvxc0kn8" path="res://Scripts/grovepedia_pages_resource.gd" id="3_e6q8r"]
+
+[resource]
+script = ExtResource("3_e6q8r")
+rarity = "Common"
+picture_1_sprite = ExtResource("1_oj5cj")
+picture_1_name = "Ball"
+picture_2_sprite = ExtResource("2_5igpo")
+picture_2_name = "Undiscovered"
+picture_3_sprite = ExtResource("2_5igpo")
+picture_3_name = "Undiscovered"
+picture_4_sprite = ExtResource("2_5igpo")
+picture_4_name = "Undiscovered"
+metadata/_custom_type_script = "uid://oef7wvxc0kn8"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="GrovepediaPagesResource" format=3 uid="uid://dwgi48w48wesl"]
+
+[ext_resource type="Texture2D" uid="uid://corcomh7a8j7e" path="res://Assets/daisy.png" id="1_qp1cr"]
+[ext_resource type="Texture2D" uid="uid://cx740xb2kdgb2" path="res://Assets/lock.png" id="2_egrjg"]
+[ext_resource type="Script" uid="uid://oef7wvxc0kn8" path="res://Scripts/grovepedia_pages_resource.gd" id="3_1bfxe"]
+
+[resource]
+script = ExtResource("3_1bfxe")
+rarity = "Common"
+picture_1_sprite = ExtResource("1_qp1cr")
+picture_1_name = "Daisy"
+picture_2_sprite = ExtResource("2_egrjg")
+picture_2_name = "Undiscovered"
+picture_3_sprite = ExtResource("2_egrjg")
+picture_3_name = "Undiscovered"
+picture_4_sprite = ExtResource("2_egrjg")
+picture_4_name = "Undiscovered"
+metadata/_custom_type_script = "uid://oef7wvxc0kn8"

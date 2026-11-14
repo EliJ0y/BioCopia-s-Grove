@@ -83,15 +83,15 @@ scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("9_31wnx")
 
 [node name="Coins" type="Sprite2D" parent="Control" unique_id=1538656539]
-position = Vector2(1230, 40)
+position = Vector2(1210, 40)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_w2feb")
 
 [node name="Coin Amount" type="Label" parent="Control" unique_id=1213037884]
 layout_mode = 0
-offset_left = 1025.0
+offset_left = 1005.0
 offset_top = 3.0
-offset_right = 1162.0
+offset_right = 1142.0
 offset_bottom = 113.0
 theme_override_font_sizes/font_size = 80
 

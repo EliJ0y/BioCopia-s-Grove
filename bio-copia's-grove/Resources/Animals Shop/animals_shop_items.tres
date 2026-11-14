@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bxif41uf4p6uf" path="res://Scripts/shop_items_resource.gd" id="1_7teus"]
 [ext_resource type="Resource" uid="uid://bi3nvcjv0e6b4" path="res://Resources/Animals Shop/shop_water.tres" id="2_6oyn5"]
 [ext_resource type="Resource" uid="uid://dmaronnbtub2n" path="res://Resources/Animals Shop/shop_berries.tres" id="3_2c6br"]
-[ext_resource type="Resource" uid="uid://dbtycjp4kyr" path="res://Resources/Animals Shop/shop_toys.tres" id="4_bhdbe"]
+[ext_resource type="Resource" uid="uid://dbtycjp4kyr" path="res://Resources/Animals Shop/shop_ball.tres" id="4_bhdbe"]
 [ext_resource type="Script" uid="uid://rgqrdub2psjm" path="res://Scripts/shop_arrays_resource.gd" id="5_8yvfu"]
 
 [resource]

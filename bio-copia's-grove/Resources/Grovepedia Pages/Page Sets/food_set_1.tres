@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GrovepediaArraysResource" format=3 uid="uid://dsya571b6kw8k"]
+
+[ext_resource type="Script" uid="uid://oef7wvxc0kn8" path="res://Scripts/grovepedia_pages_resource.gd" id="1_6sspf"]
+[ext_resource type="Resource" uid="uid://d2j5760k0rwu4" path="res://Resources/Grovepedia Pages/Food Pages/food_page_1.tres" id="2_0wb7b"]
+[ext_resource type="Resource" uid="uid://cyluowjr6r3ni" path="res://Resources/Grovepedia Pages/Food Pages/food_page_2.tres" id="3_lr21o"]
+[ext_resource type="Script" uid="uid://b23iplbxcaoks" path="res://Scripts/grovepedia_arrays_resource.gd" id="4_2uxvr"]
+
+[resource]
+script = ExtResource("4_2uxvr")
+page_set = Array[ExtResource("1_6sspf")]([ExtResource("2_0wb7b"), ExtResource("3_lr21o")])
+metadata/_custom_type_script = "uid://b23iplbxcaoks"

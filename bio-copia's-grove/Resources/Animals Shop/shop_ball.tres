@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShopItemsResource" format=3 uid="uid://dbtycjp4kyr"]
+
+[ext_resource type="Texture2D" uid="uid://ysb6l4xygb5r" path="res://Assets/pet-ball.png" id="1_lbcld"]
+[ext_resource type="Script" uid="uid://bxif41uf4p6uf" path="res://Scripts/shop_items_resource.gd" id="2_gcbb8"]
+
+[resource]
+script = ExtResource("2_gcbb8")
+item_texture = ExtResource("1_lbcld")
+item_cost = 30
+item_name = "Ball"
+metadata/_custom_type_script = "uid://bxif41uf4p6uf"

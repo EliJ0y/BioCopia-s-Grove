@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GrovepediaArraysResource" format=3 uid="uid://cpk6xple43kgt"]
+
+[ext_resource type="Script" uid="uid://oef7wvxc0kn8" path="res://Scripts/grovepedia_pages_resource.gd" id="1_fge26"]
+[ext_resource type="Resource" uid="uid://uvgek51c22kn" path="res://Resources/Grovepedia Pages/Plants Pages/plants_page_1.tres" id="2_7arep"]
+[ext_resource type="Resource" uid="uid://dwgi48w48wesl" path="res://Resources/Grovepedia Pages/Plants Pages/plants_page_2.tres" id="3_d8rxd"]
+[ext_resource type="Script" uid="uid://b23iplbxcaoks" path="res://Scripts/grovepedia_arrays_resource.gd" id="4_wbf0w"]
+
+[resource]
+script = ExtResource("4_wbf0w")
+page_set = Array[ExtResource("1_fge26")]([ExtResource("2_7arep"), ExtResource("3_d8rxd")])
+metadata/_custom_type_script = "uid://b23iplbxcaoks"

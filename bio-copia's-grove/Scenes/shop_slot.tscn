@@ -8,6 +8,9 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0v82l"]
 texture = ExtResource("1_rlcft")
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n01f5"]
+texture = ExtResource("1_rlcft")
+
 [node name="Shop Slot" type="Panel" unique_id=1817433048]
 custom_minimum_size = Vector2(324, 296)
 offset_right = 324.0
@@ -25,10 +28,37 @@ scale = Vector2(0.15, 0.15)
 texture = ExtResource("2_ca1mn")
 centered = false
 
-[node name="Info Icon" type="Sprite2D" parent="." unique_id=1621508507]
-position = Vector2(295, 268)
+[node name="Info Icon" type="TextureButton" parent="." unique_id=119092156]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 191.0
+offset_right = 826.0
+offset_bottom = 566.0
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("3_w5lup")
+texture_normal = ExtResource("3_w5lup")
+
+[node name="Info Panel" type="Panel" parent="." unique_id=1216352008]
+layout_mode = 0
+offset_right = 324.0
+offset_bottom = 296.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_n01f5")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Info Panel" unique_id=242615758]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "Exp Needed to Fully Grow:
+(TBA)
+
+Attributes:
+(TBA)"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Cost Value" type="Label" parent="." unique_id=104395830]
 layout_mode = 0
@@ -82,4 +112,5 @@ text = "Buy"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[connection signal="pressed" from="Info Icon" to="." method="_on_info_icon_pressed"]
 [connection signal="pressed" from="Buy BG" to="." method="_on_buy_bg_pressed"]

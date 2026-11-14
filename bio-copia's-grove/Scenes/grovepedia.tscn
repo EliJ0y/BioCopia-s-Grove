@@ -5,6 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://cfvuts5qxqtcw" path="res://Assets/Brown Background.png" id="3_ob31t"]
 [ext_resource type="Texture2D" uid="uid://kvj1pjhld0sr" path="res://Assets/Open Book Pages.png" id="4_eo274"]
 [ext_resource type="Texture2D" uid="uid://binanq36fuf6e" path="res://Assets/Green Arrow.png" id="4_jxi1o"]
+[ext_resource type="Texture2D" uid="uid://rke8syskdjnd" path="res://Assets/Brown Arrow.png" id="6_cc1db"]
+[ext_resource type="Texture2D" uid="uid://6vuh1mcp17rh" path="res://Assets/leaf.png" id="6_vdry1"]
+[ext_resource type="Texture2D" uid="uid://cfleybfhwyn5o" path="res://Assets/paw.png" id="7_cc1db"]
+[ext_resource type="Texture2D" uid="uid://clnm7k3wm4p33" path="res://Assets/pet-bowl.png" id="9_2tju3"]
+[ext_resource type="Texture2D" uid="uid://fhfdgwf8gwxd" path="res://Assets/toys.png" id="10_hk2qm"]
 
 [node name="Grovepedia" type="Node2D" unique_id=984212147]
 script = ExtResource("1_62bp2")
@@ -18,7 +23,6 @@ scale = Vector2(0.55, 0.55)
 texture_normal = ExtResource("2_rn4c0")
 
 [node name="Pages" type="Control" parent="." unique_id=1884598275]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1280.0
@@ -44,160 +48,216 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("4_eo274")
 centered = false
 
-[node name="Rarity 1" type="Label" parent="Pages" unique_id=1786177197]
+[node name="Previous Page" type="TextureButton" parent="Pages" unique_id=946659026]
 layout_mode = 0
+offset_left = 226.0
+offset_top = 499.0
+offset_right = 892.0
+offset_bottom = 874.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("6_cc1db")
+
+[node name="Next Page" type="TextureButton" parent="Pages" unique_id=1911743445]
+layout_mode = 0
+offset_left = 815.99994
+offset_top = 499.0
+offset_right = 1482.0
+offset_bottom = 874.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("6_cc1db")
+flip_h = true
+
+[node name="Plants" type="TextureButton" parent="Pages" unique_id=103380471]
+visible = false
+layout_mode = 0
+offset_left = 380.0
+offset_top = 240.0
+offset_right = 892.0
+offset_bottom = 752.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("6_vdry1")
+
+[node name="Animals" type="TextureButton" parent="Pages" unique_id=1538756212]
+visible = false
+layout_mode = 0
+offset_left = 720.0
+offset_top = 240.0
+offset_right = 1232.0
+offset_bottom = 752.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("7_cc1db")
+
+[node name="Food" type="TextureButton" parent="Pages" unique_id=227670313]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 235.0
+offset_right = 887.0
+offset_bottom = 747.0
+scale = Vector2(0.45, 0.45)
+texture_normal = ExtResource("9_2tju3")
+
+[node name="Toys" type="TextureButton" parent="Pages" unique_id=566690075]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 240.0
+offset_right = 1232.0
+offset_bottom = 752.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("10_hk2qm")
+
+[node name="Left Page" type="Node2D" parent="Pages" unique_id=148932761]
+
+[node name="Rarity" type="Label" parent="Pages/Left Page" unique_id=1786177197]
 offset_left = 398.0
 offset_top = 97.0
 offset_right = 574.0
 offset_bottom = 152.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 40
-text = "Common"
 
-[node name="Animal 1" type="TextureButton" parent="Pages" unique_id=1774246973]
-layout_mode = 0
+[node name="Animal 1" type="TextureButton" parent="Pages/Left Page" unique_id=1774246973]
 offset_left = 353.0
 offset_top = 183.0
 offset_right = 468.0
 offset_bottom = 312.0
 
-[node name="Animal 1 Name" type="Label" parent="Pages" unique_id=312076281]
-layout_mode = 0
+[node name="Animal 1 Name" type="Label" parent="Pages/Left Page" unique_id=312076281]
 offset_left = 369.0
 offset_top = 315.0
 offset_right = 454.0
 offset_bottom = 343.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 20
-text = "Animal 1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Animal 2" type="TextureButton" parent="Pages" unique_id=609458762]
-layout_mode = 0
+[node name="Animal 2" type="TextureButton" parent="Pages/Left Page" unique_id=609458762]
 offset_left = 510.0
 offset_top = 183.0
 offset_right = 625.0
 offset_bottom = 312.0
 
-[node name="Animal 2 Name" type="Label" parent="Pages" unique_id=1034089282]
-layout_mode = 0
+[node name="Animal 2 Name" type="Label" parent="Pages/Left Page" unique_id=1034089282]
 offset_left = 525.0
 offset_top = 315.0
 offset_right = 610.0
 offset_bottom = 343.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 20
-text = "Animal 2"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Animal 3" type="TextureButton" parent="Pages" unique_id=1762042799]
-layout_mode = 0
+[node name="Animal 3" type="TextureButton" parent="Pages/Left Page" unique_id=1762042799]
 offset_left = 353.0
 offset_top = 378.0
 offset_right = 468.0
 offset_bottom = 507.0
 
-[node name="Animal 3 Name" type="Label" parent="Pages" unique_id=1784846532]
-layout_mode = 0
+[node name="Animal 3 Name" type="Label" parent="Pages/Left Page" unique_id=1784846532]
 offset_left = 369.0
 offset_top = 510.0
 offset_right = 454.0
 offset_bottom = 538.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 20
-text = "Animal 3"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Animal 4" type="TextureButton" parent="Pages" unique_id=1994631147]
-layout_mode = 0
+[node name="Animal 4" type="TextureButton" parent="Pages/Left Page" unique_id=1994631147]
 offset_left = 510.0
 offset_top = 378.0
 offset_right = 625.0
 offset_bottom = 507.0
 
-[node name="Animal 4 Name" type="Label" parent="Pages" unique_id=63444961]
-layout_mode = 0
+[node name="Animal 4 Name" type="Label" parent="Pages/Left Page" unique_id=63444961]
 offset_left = 525.0
 offset_top = 510.0
 offset_right = 610.0
 offset_bottom = 538.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 20
-text = "Animal 4"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Rarity 2" type="Label" parent="Pages" unique_id=491934733]
-layout_mode = 0
+[node name="Right Page" type="Node2D" parent="Pages" unique_id=293507340]
+visible = false
+
+[node name="Rarity" type="Label" parent="Pages/Right Page" unique_id=491934733]
 offset_left = 729.0
 offset_top = 97.0
 offset_right = 905.0
 offset_bottom = 152.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 40
-text = "Common"
 
-[node name="Animal 5" type="TextureButton" parent="Pages" unique_id=1636461978]
-layout_mode = 0
+[node name="Animal 1" type="TextureButton" parent="Pages/Right Page" unique_id=1636461978]
 offset_left = 684.0
 offset_top = 183.0
 offset_right = 799.0
 offset_bottom = 312.0
 
-[node name="Animal 5 Name" type="Label" parent="Pages" unique_id=841334608]
-layout_mode = 0
+[node name="Animal 1 Name" type="Label" parent="Pages/Right Page" unique_id=841334608]
 offset_left = 700.0
 offset_top = 315.0
 offset_right = 785.0
 offset_bottom = 343.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 20
-text = "Animal 5"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Animal 6" type="TextureButton" parent="Pages" unique_id=258948983]
-layout_mode = 0
+[node name="Animal 2" type="TextureButton" parent="Pages/Right Page" unique_id=258948983]
 offset_left = 841.0
 offset_top = 183.0
 offset_right = 956.0
 offset_bottom = 312.0
 
-[node name="Animal 6 Name" type="Label" parent="Pages" unique_id=1799817028]
-layout_mode = 0
+[node name="Animal 2 Name" type="Label" parent="Pages/Right Page" unique_id=1799817028]
 offset_left = 856.0
 offset_top = 315.0
 offset_right = 941.0
 offset_bottom = 343.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 20
-text = "Animal 6"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Animal 7" type="TextureButton" parent="Pages" unique_id=1653903651]
-layout_mode = 0
+[node name="Animal 3" type="TextureButton" parent="Pages/Right Page" unique_id=1653903651]
 offset_left = 684.0
 offset_top = 378.0
 offset_right = 799.0
 offset_bottom = 507.0
 
-[node name="Animal 7 Name" type="Label" parent="Pages" unique_id=1681325824]
-layout_mode = 0
+[node name="Animal 3 Name" type="Label" parent="Pages/Right Page" unique_id=1681325824]
 offset_left = 700.0
 offset_top = 510.0
 offset_right = 785.0
 offset_bottom = 538.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 20
-text = "Animal 7"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Animal 8" type="TextureButton" parent="Pages" unique_id=261477072]
-layout_mode = 0
+[node name="Animal 4" type="TextureButton" parent="Pages/Right Page" unique_id=261477072]
 offset_left = 841.0
 offset_top = 378.0
 offset_right = 956.0
 offset_bottom = 507.0
 
-[node name="Animal 8 Name" type="Label" parent="Pages" unique_id=1107807415]
-layout_mode = 0
+[node name="Animal 4 Name" type="Label" parent="Pages/Right Page" unique_id=1107807415]
 offset_left = 856.0
 offset_top = 510.0
 offset_right = 941.0
 offset_bottom = 538.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 20
-text = "Animal 8"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="Grovepedia" to="." method="_on_grovepedia_pressed"]
+[connection signal="pressed" from="Pages/Previous Page" to="." method="_on_previous_page_pressed"]
+[connection signal="pressed" from="Pages/Next Page" to="." method="_on_next_page_pressed"]
+[connection signal="pressed" from="Pages/Plants" to="." method="_on_plants_pressed"]
+[connection signal="pressed" from="Pages/Animals" to="." method="_on_animals_pressed"]
+[connection signal="pressed" from="Pages/Food" to="." method="_on_food_pressed"]
+[connection signal="pressed" from="Pages/Toys" to="." method="_on_toys_pressed"]
