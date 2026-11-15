@@ -15,6 +15,13 @@ How to play:
 This is very early in development so many assets are free icons that I found online, and the aesthetics of the project itself is still not up to standard. Nonetheless, hope you have even a bit of fun!
 
 
+<img width="642" height="359" alt="Screenshot 2026-11-15 at 1 01 05 PM" src="https://github.com/user-attachments/assets/73baffad-4726-4fdb-85f5-6663573e3232" />
+<img width="1430" height="801" alt="Screenshot 2026-11-15 at 8 41 41 PM" src="https://github.com/user-attachments/assets/1d083778-4cdd-42d1-bd1b-0f42e607d442" />
+<img width="638" height="361" alt="Screenshot 2026-11-15 at 11 49 11 PM" src="https://github.com/user-attachments/assets/f916bab7-737e-4aad-b321-9c9bc60d6226" />
+<img width="640" height="360" alt="Screenshot 2026-11-15 at 11 49 57 PM" src="https://github.com/user-attachments/assets/8b8bac6e-eef0-4975-bf9a-3cff464ffd0e" />
+
+
+
 Assets I found online and used:
 garden background: Photo by <a href="https://unsplash.com/@dcpweb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pankaj Shah</a> on <a href="https://unsplash.com/photos/green-grass-field-with-trees-1ff_i7jO-4g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 pine tree: https://www.flaticon.com/free-icon/pine-tree_2220059?term=pine&page=1&position=11&origin=tag&related_id=2220059
