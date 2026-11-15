@@ -27,4 +27,8 @@ func update_inventory():
 		var slot = inventory_slots[i]
 		if i < inventory_items.size():
 			var inventory_item = inventory_items[i]
+			slot.get_inventory_item(inventory_item)
 			slot.get_node("Inventory Sprite").texture = inventory_item.item_texture
+		else:
+			slot.get_inventory_item(null)
+			slot.get_node("Inventory Sprite").texture = null

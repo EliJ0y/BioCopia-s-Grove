@@ -167,7 +167,7 @@ func update_pages():
 func fill_page_contacts(rarity: Label, sprites: Array, names: Array, page):
 	print(page.sprites.size(), " ", page.names.size())
 	rarity.text = page.rarity
-	for i in 4:
+	for i in page.sprites.size():
 		if GameManager.unlocked_items.has(page.names[i]):
 			sprites[i].texture_normal = page.sprites[i]
 			names[i].text = page.names[i]
