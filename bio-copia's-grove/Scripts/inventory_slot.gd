@@ -1,5 +1,7 @@
 extends TextureButton
 
+signal item_to_place(item: ShopItemsResource)
+
 var inventory_item: ShopItemsResource
 
 
@@ -13,7 +15,11 @@ func _on_pressed() -> void:
 	$"Panel/Place Object Name".text = "Place " + inventory_item.item_name + "?"
 
 func _on_no_button_pressed() -> void:
-	$Panel.visible = false
+	hide_panel()
 
 func _on_yes_button_pressed() -> void:
-	pass # Replace with function body.
+	hide_panel()
+	item_to_place.emit(inventory_item)
+
+func hide_panel():
+	$Panel.visible = false

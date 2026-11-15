@@ -20,6 +20,8 @@ scale = Vector2(0.352, 0.352)
 texture = ExtResource("2_w2feb")
 centered = false
 
+[node name="Placed Items" type="Node2D" parent="." unique_id=1310062519]
+
 [node name="Control" type="Control" parent="." unique_id=2108334458]
 layout_mode = 3
 anchors_preset = 15
@@ -29,6 +31,7 @@ offset_right = 1280.0
 offset_bottom = 720.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Owner Name BG" type="TextureButton" parent="Control" unique_id=1282171278]

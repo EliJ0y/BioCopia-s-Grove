@@ -21,6 +21,7 @@ func _on_shop_icon_pressed() -> void:
 	$"Shop Panel".visible = true
 	$"../Inventory".visible = false
 	$"../Grovepedia".visible = false
+	$"../Placed Items".visible = false
 
 func _on_plant_shop_button_pressed() -> void:
 	margin_container.visible = true
@@ -34,14 +35,12 @@ func _on_back_arrow_pressed() -> void:
 	if margin_container.visible == true:
 		margin_container.visible = false
 	else: 
-		hide_info_panels()
+		for slot in shop_slots:
+			slot.hide_info_panel()
 		$"Shop Panel".visible = false
 		$"../Inventory".visible = true
 		$"../Grovepedia".visible = true
-
-func hide_info_panels():
-	for slot in shop_slots:
-		slot.hide_info_panel()
+		$"../Placed Items".visible = true
 
 func show_shop_items(shop_items: Array):
 	for i in shop_slots.size():

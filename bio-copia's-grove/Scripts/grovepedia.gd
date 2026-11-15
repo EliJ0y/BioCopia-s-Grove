@@ -46,6 +46,7 @@ func _on_grovepedia_pressed() -> void:
 	$Pages.visible = true
 	$"../Shop".visible = false
 	$"../Inventory".visible = false
+	$"../Placed Items".visible = false
 
 func _on_back_arrow_pressed() -> void:
 	current_set_index = 0
@@ -54,6 +55,7 @@ func _on_back_arrow_pressed() -> void:
 	$Pages.visible = false
 	$"../Shop".visible = true
 	$"../Inventory".visible = true
+	$"../Placed Items".visible = true
 
 func show_grovepedia_categories():
 	if plants_sprites_shown:
