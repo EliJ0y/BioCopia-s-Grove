@@ -9,10 +9,14 @@ var inventory_items: Array[ShopItemsResource] = []
 func _on_inventory_icon_pressed() -> void:
 	$Background.visible = true
 	$NinePatchRect.visible = true
+	$"../Shop".visible = false
+	$"../Grovepedia".visible = false
 
 func _on_back_arrow_pressed() -> void:
 	$Background.visible = false
 	$NinePatchRect.visible = false
+	$"../Shop".visible = true
+	$"../Grovepedia".visible = true
 
 func add_inventory_item(item: ShopItemsResource):
 	inventory_items.append(item)

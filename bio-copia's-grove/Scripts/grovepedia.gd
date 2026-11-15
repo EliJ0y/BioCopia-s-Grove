@@ -6,6 +6,8 @@ var animals_page_sets = [preload("res://Resources/Grovepedia Pages/Page Sets/ani
 var food_page_sets = [preload("res://Resources/Grovepedia Pages/Page Sets/food_set_1.tres")]
 var toys_page_sets = [preload("res://Resources/Grovepedia Pages/Page Sets/toys_set_1.tres")]
 
+var lock_texture = preload("res://Assets/lock.png")
+
 @onready var left_rarity: Label = $"Pages/Left Page/Rarity"
 @onready var right_rarity: Label = $"Pages/Right Page/Rarity"
 
@@ -42,11 +44,16 @@ func _on_grovepedia_pressed() -> void:
 	show_grovepedia_categories()
 	pages_open = false
 	$Pages.visible = true
+	$"../Shop".visible = false
+	$"../Inventory".visible = false
 
 func _on_back_arrow_pressed() -> void:
 	current_set_index = 0
 	open_grovepedia_pages()
+	pages_open = false
 	$Pages.visible = false
+	$"../Shop".visible = true
+	$"../Inventory".visible = true
 
 func show_grovepedia_categories():
 	if plants_sprites_shown:
@@ -83,6 +90,7 @@ func open_grovepedia_pages():
 
 func _on_plants_pressed() -> void:
 	page_set = plants_page_sets
+	current_set_index = 0
 	plants_sprites_shown = false
 	food_toys_shown = false
 	show_grovepedia_categories()
@@ -91,6 +99,7 @@ func _on_plants_pressed() -> void:
 
 func _on_animals_pressed() -> void:
 	page_set = animals_page_sets
+	current_set_index = 0
 	plants_sprites_shown = false
 	food_toys_shown = false
 	show_grovepedia_categories()
@@ -99,6 +108,7 @@ func _on_animals_pressed() -> void:
 
 func _on_food_pressed() -> void:
 	page_set = food_page_sets
+	current_set_index = 0
 	plants_sprites_shown = false
 	food_toys_shown = false
 	show_grovepedia_categories()
@@ -107,6 +117,7 @@ func _on_food_pressed() -> void:
 
 func _on_toys_pressed() -> void:
 	page_set = toys_page_sets
+	current_set_index = 0
 	plants_sprites_shown = false
 	food_toys_shown = false
 	show_grovepedia_categories()
@@ -118,7 +129,7 @@ func _on_previous_page_pressed() -> void:
 		show_grovepedia_categories()
 		plants_sprites_shown = true
 		food_toys_shown = false
-	else:
+	elif pages_open:
 		previous_page_set()
 
 func _on_next_page_pressed() -> void:
@@ -126,7 +137,7 @@ func _on_next_page_pressed() -> void:
 		show_grovepedia_categories()
 		plants_sprites_shown = false
 		food_toys_shown = true
-	else:
+	elif pages_open:
 		next_page_set()
 
 func previous_page_set():
@@ -148,12 +159,18 @@ func next_page_set():
 func update_pages():
 	#gets the correct resource from the preloaded arrays
 	var current_page_set = page_set[current_set_index]
+	print(current_page_set.sets_of_pages.size())
 	#page gets the correct resource(left/right page) from the array of current_page_set
 	fill_page_contacts(left_rarity, left_sprites, left_names, current_page_set.sets_of_pages[0])
 	fill_page_contacts(right_rarity, right_sprites, right_names, current_page_set.sets_of_pages[1])
 
 func fill_page_contacts(rarity: Label, sprites: Array, names: Array, page):
+	print(page.sprites.size(), " ", page.names.size())
 	rarity.text = page.rarity
 	for i in 4:
-		sprites[i].texture_normal = page.sprites[i]
-		names[i].text = page.names[i]
+		if GameManager.unlocked_items.has(page.names[i]):
+			sprites[i].texture_normal = page.sprites[i]
+			names[i].text = page.names[i]
+		else:
+			sprites[i].texture_normal = lock_texture
+			names[i].text = "Undiscovered"

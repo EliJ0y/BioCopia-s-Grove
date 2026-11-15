@@ -116,6 +116,8 @@ offset_right = 606.0
 offset_bottom = 160.0
 theme_override_colors/font_color = Color(0.4509804, 0.16862746, 0.09803922, 1)
 theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Sprite 1" type="TextureButton" parent="Pages/Left Page" unique_id=1774246973]
 offset_left = 353.0
